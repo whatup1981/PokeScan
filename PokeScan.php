@@ -164,6 +164,7 @@ DOC;
         $msg = array();
         $msg['from'] = 'Bot';
         $msg['color'] = 'red';
+        $msg['notify'] = true;
         $st = time();
         $t = $pokemon["created"]+15*60 - time();
         $id = microtime(true);
@@ -184,7 +185,7 @@ DOC;
     }
 DOC;
         $msg['card'] = json_decode($card, true);
-        $msg['message'] = 'test';
+        $msg['message'] = $str;
         return $msg;
 
   }
