@@ -185,7 +185,7 @@ DOC;
     }
 DOC;
         $msg['card'] = json_decode($card, true);
-        $msg['message'] = {$this->_pokeData[$pokemon['pokemonId']]} .' - '.$str;
+        $msg['message'] = '@here ' .  $this->_pokeData[$pokemon['pokemonId']] .' - '.$str;
         return $msg;
 
   }
